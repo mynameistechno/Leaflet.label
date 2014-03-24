@@ -16,6 +16,6 @@ desc('Check Leaflet.label source for errors with JSHint');
 task('lint', build.lint);
 
 desc('Combine and compress Leaflet.label source files');
-task('build', ['lint'], build.build);
+task('build', build.build);
 
 task('default', ['build']);
